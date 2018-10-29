@@ -1,0 +1,249 @@
+
+*,
+::before,
+::after{
+    /* 选择所有的标签 */
+    margin: 0;
+    padding: 0;
+    /* 清除运动端默认的点击高亮效果 */
+    -webkit-top-highlight-color:transparent;
+/* 设置所有的都是以边框开始计算宽度的百分比 */
+    -webkit-box-sizing: border-box;
+    box-sizing:border-box;
+}
+body{
+    font-size:14px;
+    /* 设置默认字体 */
+    font-family: "MicroSoft YaHei",sans-serif;
+    color: #333;
+}
+a{
+    color: #333;
+    /* text-decoration 属性规定添加到文本的修饰。 */
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+input{
+    border:none;
+    outline: none;
+    /* 清除运动端默认的表单样式 */
+    -webkit-appearance: none;
+}
+.f_left{
+    float: left;
+}
+.f_right{
+    float:right;
+}
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    height: 0;
+    line-height: 0;
+    /* 显示为块级元素 */
+    display: block;
+    /* 元素是不可见的。 */
+    visibility: hidden;
+    /* 在左右两侧均不允许浮动元素 */
+    clear: both;
+}
+[class^="icon_"]{
+    background: url("../images/s1.png") no-repeat;
+    background-size: 200px 200px;
+}
+.m_110{
+    /* 左边距 */
+    margin-left: 10px;
+}
+.m_r10{
+    /* 右边距 */
+    margin-right: 10px;
+}
+.m_b10{
+    /* 下边距 */
+    margin-bottom: 10px;
+}
+.m_t10{
+    /* 上边距 */
+    margin-top:10px;
+}
+/* 顶部通栏 */
+.hm_topBar{
+    width:100%;
+    height:45px;
+    /* X  只有水平位置会重复背景图像 */
+    background:url("../images/s1.png")repeat-x;
+    /* 指定背景图像的大小 */
+    background-size: 1px 44px;
+    /* 设置底部边框样式 */
+    border-bottom: 1px solid #ccc;
+    /* 生成绝对定位的元素 */
+    position: absolute;
+}
+.hm_topBar>[class^="icon_"]{
+    position:absolute;
+    top:0;
+    height: 44px;
+    width: 40px;
+    padding: 12px 10px;
+    /* 背景绘制在内容方框内（剪切成内容方框）。 */
+    background-clip:content-box;
+    /* 背景图像的相对位置的内容框 */
+    background-origin: content-box;
+}
+.hm_topBar > .icon_back{
+    left: 0;
+    /* 设置背景图像的起始位置 */
+    background-position: -20px 0;
+}
+.hm_topBar > .icon_menu{
+    left:0;
+    background-position:-60px 0 ;
+}
+.hm_topBar > form{
+    widows: 100%;
+    height: 44px;
+    /* 填充属性 上下0 左右40px */
+    padding: 0 40px;
+}
+.hm_topBar > form > input{
+    width: 100%;
+    /* 设置边框样式 */
+    border:1px solid #e0e0e0;
+    /* 添加圆角的边框 */
+    border-radius: 4px;
+    height: 30px;
+    margin-top:7px;
+}
+.hm_topBar > h3{
+    /* 把文本排列到中间 */
+    text-align:center;
+    line-height: 44px;
+    /* 设置文本的粗细默认normal */
+    font-weight: normal;
+}
+.hm_header{
+    /* 生成固定定位的元素，相对于浏览器窗口进行定位。 */
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 40px;
+    widows: 100%;
+    z-index: 1000;
+}
+/*div>p 选择父元素为 <div> 元素的所有 <p> 元素。 */
+.hm_header > .hm_header_box{
+    width:100%;
+    max-width: 640px;
+    min-width: 300px;
+    margin:0 auto;
+    /* 设置透明度 */
+    background: rgba(201, 21, 35, 0);
+    height: 40px;
+    /* 生成相对定位的元素，相对于其正常位置进行定位 */
+    position: relative;
+}
+.hm_header > .hm_header_box > .icon_logo{
+    width:60px;
+    height: 36px;
+    /* 生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位 */
+    position: absolute;
+    /* 设置背景图像的起始位置 */
+    background-position: 0 -103px;
+    top:4px;
+    left: 10px;
+}
+.hm_header > .hm_header_box > .login{
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    /* 把文本排列到中间 */
+    text-align: center;
+    color: #fff;
+    /* 生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位 */
+    position: absolute;
+    right: 0;
+    top:0;
+    font-size:15px;
+}
+.hm_header > .hm_header_box > form{
+    widows: 100%;
+    /* 左部填充 */
+    padding-left: 75px;
+    /* 右部填充 */
+    padding-right: 50px;
+    height: 40px;
+/* 生成相对定位的元素，相对于其正常位置进行定位。 */
+    position: relative;
+}
+.hm_header > .hm_header_box > .form > input{
+    width:100%;
+    height: 30px;
+    /* 边框半径 */
+    border-radius: 15px;
+    /* 左边缘 */
+    margin-left: 30px;
+}
+.hm_header > .hm_header_box > form >.icon_search{
+    height: 20px;
+    width:20px;
+    position: absolute;
+    background-position: -60px -109px;
+    top:10px;
+    left:85px;
+}
+/* .hm_banner{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.hm_banner>ul:first-child{
+    width: 1000%;
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%);
+}
+.hm_banner>ul:first-child>li{
+    width: 10%;
+    float: left;
+}
+.hm_banner>ul:first-child>li>a{
+    width: 100%;
+    display:block;
+}
+.hm_banner>ul:first-child>li>a>img{
+    width: 100%;
+    /*
+    font-size 0
+    block
+    vertical-align:middle;
+    */
+    /* display: block;
+}
+.hm_banner>ul:last-child{
+    width: 118px;
+    height: 6px;
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    margin-left: -59px;
+}
+.hm_banner>ul:last-child>li{
+    width: 118px;
+    height: 6px;
+    float: left;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    margin-left: 10px;
+
+}
+.hm_banner >ul:last-child>li.now{
+    background-color: #fff;
+}
+.hm_banner>ul:last-child>li:nth-child(1){
+    margin-left: 0;
+} */ 
