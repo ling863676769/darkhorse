@@ -1,7 +1,7 @@
 
 .hm_header{
     /* 生成固定定位的元素，相对于浏览器窗口进行定位。 */
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     top: 0;
     height: 40px;

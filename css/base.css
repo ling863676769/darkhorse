@@ -52,7 +52,7 @@ input{
     clear: both;
 }
 [class^="icon_"]{
-    background: url("")no-repeat;
+    background: url("../images/s1.png")no-repeat;
     background-size: 20px 20px;
 }
 .m_110{
