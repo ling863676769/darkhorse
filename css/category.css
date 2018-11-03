@@ -1,0 +1,40 @@
+/* 右侧栏 */
+.hm_category_right{
+    overflow: hidden;
+    height: 100%;
+}
+.hm_category_right_box{
+    padding: 0 10px;
+}
+.hm_category_right_box>.banner{
+    width: 100%;
+    padding-top: 10px;
+    display: block;
+}
+.hm_category_right_box>.banner>img{
+    width: 100%;
+}
+.hot_cat{
+    margin-top: 10px;
+}
+.hot_cat>h3{
+    font-size: 12px;
+}
+.hot_cat>ul{
+    width: 100%;
+}
+.hot_cat>ul>li{
+    width: 33.333%;
+    float: left;
+}
+.hot_cat>ul>li>a{
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+}
+.hot_cat>ul>li>a>img{
+    width: 62px;
+    height: 62px;
+    margin: 0 auto;
+    display: block;
+}
