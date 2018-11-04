@@ -7,13 +7,15 @@
     <title>Document</title>
     <link rel="stylesheet"  href="css/cart.css">
     <link rel="stylesheet"  href="css/base.css">
+    <link rel="stylesheet"  href="css/iconfont.css">
+    <link rel="stylesheet"  href="css/iconfont1.css">
 </head>
 <body>
    <!-- 定义顶部通栏 -->
    <header class="hm_topBar">
-       <a href="#" class="icon_back"></a>
+    <a href="index.html" class="icon_back"><img src="images/arrowL.png"alt=""></a>
        <h3>购物车</h3>
-       <a href="#" class="icon_menu"></a>
+       <!-- <a href="#" class="icon_menu"></a> -->
    </header>
    <!-- 安全提示 -->
    <div class="hm_safeTip">
@@ -34,7 +36,7 @@
 <div class="hm_shop_con"> 
     <div class="hm_product">
      <div class="hm_product_left">
-         <a href="#" class="hm_check_box" checked></a>
+         <a href="#" class="hm_check_box iconfont1 icon-yuangou" checked></a>
     </div>
    <div class="hm_product_right">
    <a class="product_img" href="#">
@@ -49,7 +51,8 @@
             <input type="tel"/>
             <span>+</span>
         </div>
-        <div class="f_right deleteBox">
+        <!-- <i class="iconfont icon-shanchutianchong"></i> -->
+        <div class="f_right iconfont icon-shanchutianchong">
             <span class="up"></span>
             <span class="down"></span>
         </div>
@@ -59,7 +62,7 @@
     </div>
    <div class="hm_product">
        <div class="hm_product_left">
-           <a href="#" class="hm_check_box" checked></a>
+        <a href="#" class="hm_check_box iconfont1 icon-yuangou" checked></a>
        </div>
        <div class="hm_product_right">
             <a class="product_img" href="#">
@@ -74,7 +77,7 @@
                          <input type="tel"/>
                          <span>+</span>
                      </div>
-                     <div class="f_right deleteBox">
+                     <div class="f_right iconfont icon-shanchutianchong">
                          <span class="up"></span>
                          <span class="down"></span>
                      </div>
@@ -99,7 +102,7 @@
                 <div class="hm_shop_con"> 
                     <div class="hm_product">
                      <div class="hm_product_left">
-                         <a href="#" class="hm_check_box" checked></a>
+                        <a href="#" class="hm_check_box iconfont1 icon-yuangou" checked></a>
                     </div>
                    <div class="hm_product_right">
                    <a class="product_img" href="#">
@@ -114,7 +117,7 @@
                             <input type="tel"/>
                             <span>+</span>
                         </div>
-                        <div class="f_right deleteBox">
+                        <div class="f_right iconfont icon-shanchutianchong">
                             <span class="up"></span>
                             <span class="down"></span>
                         </div>
@@ -124,7 +127,7 @@
     </div>
     <div class="hm_product">
             <div class="hm_product_left">
-                <a href="#" class="hm_check_box" checked></a>
+                <a href="#" class="hm_check_box iconfont1 icon-yuangou" checked></a>
             </div>
             <div class="hm_product_right">
                  <a class="product_img" href="#">
@@ -139,7 +142,7 @@
                               <input type="tel"/>
                               <span>+</span>
                           </div>
-                          <div class="f_right deleteBox">
+                          <div class="f_right iconfont icon-shanchutianchong">
                               <span class="up"></span>
                               <span class="down"></span>
                           </div>
@@ -148,6 +151,16 @@
               </div>
             </div>
         </div>
+     </div>
+     <!-- 弹出 -->
+     <div class="hm_win">
+         <div class="hm_win_box">
+             <div class="text">你确定要删除这个商品嘛</div>
+             <div class="bat clearfix">
+                 <a href="#"class="cancel">取消</a>
+                 <a href="#"class="submit">确定</a>
+             </div>
+         </div>
      </div>
 </body>
 </html>
